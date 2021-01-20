@@ -19,3 +19,12 @@ services:
       NODE_ENV: production
     ports:
       - 3001:80
+
+  vue-js:
+    build:
+      context: vue-app
+      dockerfile: Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3002:80
